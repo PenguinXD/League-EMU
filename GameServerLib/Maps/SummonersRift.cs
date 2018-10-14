@@ -15,6 +15,7 @@ namespace LeagueSandbox.GameServer.Maps
     {
         private static readonly List<Vector2> BlueTopWaypoints = new List<Vector2>
         {
+            new Vector2(1084.0f, 1901.0f),
             new Vector2(917.0f, 1725.0f),
             new Vector2(1170.0f, 4041.0f),
             new Vector2(861.0f, 6459.0f),
