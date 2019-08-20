@@ -18,6 +18,24 @@ namespace GameServerCore
             X = FormatCoordinate(x, game.Map.NavGrid.MiddleOfMap.Y);
             Y = FormatCoordinate(y, game.Map.NavGrid.MiddleOfMap.X);
         }
+        
+        public MovementCheck(ushort x, ushort y)
+        {
+            MiddleOfMap.X = x;
+            MiddleOfMap.Y = y;
+        }
+        
+        public MovementCheck(IGame game, float x, float y)
+        {
+            if (MiddleOfMap.X || MiddleOfMap.Y != null)
+            {
+                // they cannot be under null...
+                // notice it for new things...
+                return;
+            }
+            x = Format(new Format(Coordinate x, game.Map.NavGrid.MiddleOfMap.X));
+            y = Format(new Format(Coorinate y, game.Map.NavGrid.MiddleOfMap.Y));
+        }
 
         public static short FormatCoordinate(float coordinate, float origin)
         {
