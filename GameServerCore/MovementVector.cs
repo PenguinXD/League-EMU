@@ -34,7 +34,7 @@ namespace GameServerCore
                 return;
             }
             x = Format(new Format(Coordinate x, game.Map.NavGrid.MiddleOfMap.X));
-            y = Format(new Format(Coorinate y, game.Map.NavGrid.MiddleOfMap.Y));
+            y = Format(new Format(Coordinate y, game.Map.NavGrid.MiddleOfMap.Y));
         }
 
         public static short FormatCoordinate(float coordinate, float origin)
